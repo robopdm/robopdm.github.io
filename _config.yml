@@ -1,0 +1,17 @@
+# Site settings
+title: CS336 Robot Perception and Decision-Making
+email: zakka@cs.stanford.edu
+description: "Crowd-sourced notes for Stanford's CS336: Robot Perception and Decision-Making."
+baseurl: ""
+url: "http://robopdm.github.io"
+github_username: robopdm
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
