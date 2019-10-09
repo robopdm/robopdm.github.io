@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CS336 Robot Perception and Decision-Making</title>
+    <title>Trigonometry Review</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Crowd-sourced notes for Stanford's CS336: Robot Perception and Decision-Making.">
-    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="http://localhost:4000/trig-review/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -43,51 +43,63 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div>
-  These notes accompany the Stanford CS class <a href="http://cs336.stanford.edu/">CS336: Robot Perception and Decision-Making</a>.<br>
-  <br>
-  If you find a typo or mistake, please feel free to submit a pull request directly to the <a href="https://github.com/robopdm/robopdm.github.io">GitHub repo</a>.
-  <br>
+      <div class="post">
+
+  <header class="post-header">
+    <h1>Trigonometry Review</h1>
+  </header>
+
+  <article class="post-content">
+  <h2 id="table-of-contents">Table of Contents</h2>
+
+<ul>
+  <li>intro about complex numbers</li>
+  <li>some properties</li>
+  <li>take a vector</li>
+  <li>rotate</li>
+  <li>derive equation</li>
+  <li>derive eulers</li>
+  <li>v’ = eitheta v</li>
+  <li>give intuition about complex exponentials</li>
+</ul>
+
+<p>In this section, we’ll be reviewing a few trig properties as well as examples of how to derive them. The purpose isn’t to cover them all, but to get you acclimated to the math for the first module.</p>
+
+<p>A handy mnemonic to remember the cosine, sine and tangent relationships in a right triangle is “soh-cah-toa”.</p>
+
+<div class="fig figcenter">
+  <img src="/assets/sohcahtoa.png" style="width:250px;" />
 </div>
 
-<!--  -->
-  <div class="module-header">Module 0: Refreshers</div>
-      <div class="materials-item">
-        <a href="trig-review">
-          Trigonometry Review
-        </a>
-      </div>
-      <div class="materials-item">
-        <a href="cs229-linalg-review.pdf">
-          Linear Algebra Review
-        </a>
-      </div>
-      <div class="materials-item">
-        <a href="proba-review">
-         Probability Review
-        </a>
-      </div>
-<!--  -->
+<p>That is, $\sin\theta = \frac{\textbf{o}\text{pposite}}{\textbf{h}\text{ypotenuse}}$, $\cos\theta = \frac{\textbf{a}\text{djacent}}{\textbf{h}\text{ypotenuse}}$ and $\tan\theta = \frac{\textbf{o}\text{pposite}}{\textbf{a}\text{djacent}}$.</p>
 
-  <div class="module-header">Module 1: Representations</div>
-    <div class="materials-item">
-      <a href="pose/">
-        Pose and Motion Representations
-      </a>
-      <div class="kw">
-        linalg recap, representations of pose in 3D space, twists and wrenches
-      </div>
-    </div>
-    <div class="materials-item">
-      <a href="">
-         Image Formation
-      </a>
-      <div class="kw">
-        artificial vs biological vision, image formation, projective geometry
-      </div>
-    </div>
+<p>We can apply these definitions in a unit circle to derive useful properties of these functions.</p>
+
+<div class="fig figcenter">
+  <img src="/assets/unit-circle.jpg" style="width:500px;" />
 </div>
 
+<p>In the figure above, let OP be a radius of the circle with $\angle POA = \theta$. From the definition of sine and cosine, we have that $\cos \theta = OA$ and  $\sin \theta = AP$ since $OP = 1$. Thus, the coordinates of the point P are $(\cos \theta, \sin \theta)$. Similarly, we can see that the point drawn at $-\theta$ has the same $x$ value as P but the negative of its $y$ value. This means that we can write an expression relating the cosine/sine of an angle with its negative:</p>
+
+<script type="math/tex; mode=display">\cos (- \theta) = \cos \theta \\
+\sin (- \theta) = - \sin \theta</script>
+
+<p>In fact, cosine is an even function and sine is an odd function. Next, consider the point Q, drawn with an angle of $\theta + 90$ from the origin. In the right triangle QPO, the angle Q is equal to $\theta$ and O equal to $90 - \theta$. This means that QBO and OAP are similar triangles. As such,</p>
+
+<script type="math/tex; mode=display">\cos(90 - \theta) = OB = AP = \sin \theta \\
+\sin(90 - \theta) = QB = OA = \cos \theta</script>
+
+<p>from which we can derive the expressions for $90 + \theta$:</p>
+
+<script type="math/tex; mode=display">\cos(90 + \theta) = \cos(90 - (-\theta)) = \sin(-\theta) = - \sin \theta \\
+\sin(90 + \theta) = \sin(90 - (-\theta)) = \cos(-\theta) = \cos \theta</script>
+
+<p>For more formulas, check out the following <a href="http://tutorial.math.lamar.edu/pdf/trig_cheat_sheet.pdf">cheatsheat</a>.</p>
+
+
+  </article>
+
+</div>
       </div>
     </div>
 

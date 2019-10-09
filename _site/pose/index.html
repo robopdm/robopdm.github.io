@@ -50,12 +50,13 @@
   </header>
 
   <article class="post-content">
-  <p>Table of Contents:</p>
+  <p><strong>Disclaimer!</strong> Notes are currently still in progress.</p>
+
+<p>Table of Contents:</p>
 
 <ul>
   <li><a href="#intro">Introduction</a></li>
   <li><a href="#conv">Conventions</a></li>
-  <li><a href="#trig">Trig Review</a></li>
   <li><a href="#planar">Planar Rotations</a></li>
   <li><a href="#three-dim">Orientation in 3D</a>
     <ul>
@@ -112,42 +113,6 @@
 <p>Positive rotation in a right-hand system is obtained using the “right-hand rule”: by aligning the thumb with the axis of rotation in the positive direction, the curl of the fingers represents a positive motion from the first axis to the second axis. In a right-hand coordinate system, this implies that a positive rotation about the z-axis when viewed from above is counter-clockwise.</p>
 
 <!-- This also means that for any rotation matrix we consider, $\operatorname{det}R = +1$. -->
-
-<p><a name="trig"></a></p>
-<h2 id="trigonometry-review">Trigonometry Review</h2>
-
-<p>In this section, we’ll be reviewing a few trig properties as well as examples of how to derive them. The purpose isn’t to cover them all, but to get you acclimated to the math for future sections.</p>
-
-<p>A handy mnemonic to remember the cosine, sine and tangent relationships in a right triangle is “soh-cah-toa”.</p>
-
-<div class="fig figcenter">
-  <img src="/assets/sohcahtoa.png" style="width:250px;" />
-</div>
-
-<p>That is, $\sin\theta = \frac{\textbf{o}\text{pposite}}{\textbf{h}\text{ypotenuse}}$, $\cos\theta = \frac{\textbf{a}\text{djacent}}{\textbf{h}\text{ypotenuse}}$ and $\tan\theta = \frac{\textbf{o}\text{pposite}}{\textbf{a}\text{djacent}}$.</p>
-
-<p>We can apply these definitions in a unit circle to derive useful properties of these functions.</p>
-
-<div class="fig figcenter">
-  <img src="/assets/unit-circle.jpg" style="width:500px;" />
-</div>
-
-<p>In the figure above, let OP be a radius of the circle with $\angle POA = \theta$. From the definition of sine and cosine, we have that $\cos \theta = OA$ and  $\sin \theta = AP$ since $OP = 1$. Thus, the coordinates of the point P are $(\cos \theta, \sin \theta)$. Similarly, we can see that the point drawn at $-\theta$ has the same $x$ value as P but the negative of its $y$ value. This means that we can write an expression relating the cosine/sine of an angle with its negative:</p>
-
-<script type="math/tex; mode=display">\cos (- \theta) = \cos \theta \\
-\sin (- \theta) = - \sin \theta</script>
-
-<p>In fact, cosine is an even function and sine is an odd function. Next, consider the point Q, drawn with an angle of $\theta + 90$ from the origin. In the right triangle QPO, the angle Q is equal to $\theta$ and O equal to $90 - \theta$. This means that QBO and OAP are similar triangles. As such,</p>
-
-<script type="math/tex; mode=display">\cos(90 - \theta) = OB = AP = \sin \theta \\
-\sin(90 - \theta) = QB = OA = \cos \theta</script>
-
-<p>from which we can derive the expressions for $90 + \theta$:</p>
-
-<script type="math/tex; mode=display">\cos(90 + \theta) = \cos(90 - (-\theta)) = \sin(-\theta) = - \sin \theta \\
-\sin(90 + \theta) = \sin(90 - (-\theta)) = \cos(-\theta) = \cos \theta</script>
-
-<p>For more formulas, check out the following <a href="http://tutorial.math.lamar.edu/pdf/trig_cheat_sheet.pdf">cheatsheat</a>.</p>
 
 <p><a name="planar"></a></p>
 <h2 id="planar-rotations">Planar Rotations</h2>
@@ -277,7 +242,7 @@
       <ul>
         
         <li>
-          <a href="https://github.com/cs336">
+          <a href="https://github.com/robopdm">
             <span class="icon github">
               <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -292,7 +257,7 @@
                 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
               </svg>
             </span>
-            <span class="username">cs336</span>
+            <span class="username">robopdm</span>
           </a>
         </li>
         
