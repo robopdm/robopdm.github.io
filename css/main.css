@@ -1,5 +1,8 @@
 /* Base */
 /* ----------------------------------------------------------*/
+:root {
+  --main-color: rgb(78, 52, 45);
+}
 
 * {
   margin: 0;
@@ -9,7 +12,6 @@
 html, body { height: 100%; }
 
 body {
-  /* font-family: Helvetica, Arial, sans-serif; */
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -43,7 +45,7 @@ a:visited { color: #205caa; }
 
 .module-header {
   font-size: 24px;
-  color: #8C1515;
+  color: var(--main-color);
   margin-top: 20px;
   margin-bottom: 5px;
 }
@@ -109,7 +111,7 @@ a:visited { color: #205caa; }
 
 .kw {
   font-size: 16px;
-  color: #08A;
+  color: rgb(5, 104, 170);
   margin-left: 10px;
 }
 
@@ -126,7 +128,7 @@ a:visited { color: #205caa; }
 .site-header {
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
-  background-color: #8C1515;
+  background-color: var(--main-color);
 }
 
 .site-title,

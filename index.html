@@ -3,46 +3,143 @@ layout: default
 ---
 
 <div>
-  These notes accompany the Stanford CS class <a href="http://cs336.stanford.edu/">CS336: Robot Perception and Decision-Making</a>.<br>
-  <br>
-  If you find a typo or mistake, please feel free to submit a pull request directly to the <a href="https://github.com/robopdm/robopdm.github.io">GitHub repo</a>.
-  <br>
+  These notes accompany the Stanford CS class <a href="http://cs336.stanford.edu/">CS336: Robot Perception and Decision-Making</a>.
+  If you find a typo or mistake, please feel free to submit a pull request directly to our
+  <a href="https://github.com/robopdm/robopdm.github.io">GitHub repo</a>.
 </div>
 
 <!--  -->
-  <div class="module-header">Module 0: Refreshers</div>
-      <div class="materials-item">
-        <a href="trig-review">
-          Trigonometry Review
-        </a>
-      </div>
-      <div class="materials-item">
-        <a href="cs229-linalg-review.pdf">
-          Linear Algebra Review
-        </a>
-      </div>
-      <div class="materials-item">
-        <a href="proba-review">
-         Probability Review
-        </a>
-      </div>
+<div class="module-header">Module 0: Refresher</div>
+<div class="materials-item">
+  <a href="trig-review">
+    Trigonometry
+  </a>
+</div>
+<div class="materials-item">
+  <a href="cs229-linalg-review.pdf">
+    Linear Algebra
+  </a>
+</div>
+<div class="materials-item">
+  <a href="proba-review">
+    Probability Theory
+  </a>
+</div>
 <!--  -->
 
-  <div class="module-header">Module 1: Representations</div>
-    <div class="materials-item">
-      <a href="pose/">
-        Pose and Motion Representations
-      </a>
-      <div class="kw">
-        linalg recap, representations of pose in 3D space, twists and wrenches
-      </div>
+<!--  -->
+<div class="module-header">Module 1: Representing Position and Orientation In 3D Space</div>
+<div class="materials-item">
+  <a href="pose/">
+    3D Orientations
+  </a>
+  <div class="kw">
+    euler angles, quaternions, axis-angles, rotation matrices
+  </div>
+</div>
+<div class="materials-item">
+  <a href="pose/">
+    Homogenous Transforms
+  </a>
+  <div class="kw">
+    combining position and orientation into a 6D pose
+  </div>
+</div>
+<div class="materials-item">
+  <a href="pose/">
+    Velocities
+  </a>
+  <div class="kw">
+    angular velocity, twist, adjoint
+  </div>
+</div>
+<div class="materials-item">
+  <a href="pose/">
+    Converting Between Representations
+  </a>
+  <div class="kw">
+    exponential and logarithmic map
+  </div>
+</div>
+<!--  -->
+
+<!-- <div class="module-header">Module 2: Perception</div>
+<div class="materials-item">
+    <a href="">
+      Image Formation
+    </a>
+    <div class="kw">
+      pinhole camera model, projective geometry
     </div>
-    <div class="materials-item">
-      <a href="">
-         Image Formation
-      </a>
-      <div class="kw">
-        artificial vs biological vision, image formation, projective geometry
-      </div>
-    </div>
+</div>
+<div class="materials-item">
+  <a href="">
+    Multi-View Geometry
+  </a>
+  <div class="kw">
+    seeing the world in stereo
+  </div>
+</div>
+<div class="materials-item">
+  <a href="">
+    Optical Flow
+  </a>
+  <div class="kw">
+    recovering motion from images
+  </div>
+</div>
+<div class="materials-item">
+  <a href="">
+    Visual Servo Control
+  </a>
+  <div class="kw">
+    an introduction to image and position-based visual servoing
+  </div>
+</div> -->
+
+<!--
+<div class="module-header">Module 3: State Estimation</div>
+<div class="materials-item">
+  <a href="">
+    Kalman Filter and Extended Kalman Filter
+  </a>
+</div>
+<div class="materials-item">
+  <a href="">
+    Particle Filter
+  </a>
+</div> -->
+
+<!-- <div class="module-header">Module 4: Applications</div>
+<div class="materials-item">
+  <a href="">
+   RGBD Reconstruction: TSDF fusion
+  </a>
+  <div class="kw">
+  </div>
+</div>
+<div class="materials-item">
+  <a href="">
+   Simulating The World with PyBullet
+  </a>
+  <div class="kw">
+  </div>
+</div> -->
+
+<div class="module-header">Applications</div>
+<div class="materials-item">
+  <a href="pose/">
+    Depth Sensing
+  </a>
+  <div class="kw">
+    an overview of various depth sensing technologies: structured light, ToF, stereo, etc.
+  </div>
+</div>
+<div class="materials-item">
+  <a href="">
+   3D Reconstruction
+  </a>
+  <div class="kw">
+    dense rgb-d based reconstruction, volumetric fusion
+  </div>
 </div>
